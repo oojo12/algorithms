@@ -1,10 +1,15 @@
-def bubble_sort(item,greatest = True):
+def bubble_sort(item,least = False):
+    """Implementation of bubble sort"""
+
     """
     Parameters:
-    
-    item - is assumed to be a list item 
-    greatest - if true returned order is greatest to least. Else it is least to greatest
+
+    item - is assumed to be a list item
+    least - if true returned order is least to greatest. Else it is greatest to least
     """
+    __author__ = "Femi"
+    __version__ = "1"
+    __status__ = "Done"
     
     for element in range(len(item)):
         for element2 in range(element,len(item)):
@@ -14,7 +19,7 @@ def bubble_sort(item,greatest = True):
                 item[element2] = x
             else:
                 pass
-    
-    if not greatest:
+
+    if least:
         item.reverse()
     return item
