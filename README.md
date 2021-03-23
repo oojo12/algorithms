@@ -1,1 +1,1 @@
-*Simply an implementation of different sortation algorithms I've come across
+*Simply an implementation of algorithms I've come across
